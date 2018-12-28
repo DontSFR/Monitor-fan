@@ -1,0 +1,34 @@
+@width:260px;
+
+.tree-table-content{
+    position: relative;
+    height: 100%;
+    .aside{
+        float: left;
+        width: @width;
+        height: 100%;
+        border-right: 1px dashed #ccc;
+        padding: 0 5px;
+        /deep/.node-container{
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            .title{
+                position: relative;
+                cursor: pointer;
+            }
+            .tool-box{
+                position: absolute;
+                right: 13px;
+                .icon{
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .content{
+        margin-left: @width;
+        height: 100%;
+    }
+}
